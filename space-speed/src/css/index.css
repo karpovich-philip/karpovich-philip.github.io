@@ -1,0 +1,384 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: DeathStar;
+    src: url(../fonts/DeathStar.otf);
+}
+
+@font-face {
+    font-family: moonhouse;
+    src: url(../fonts/moonhouse.ttf);
+}
+
+body {
+    text-transform: uppercase;
+}
+
+body a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.container h1:not(.game_name) {
+    color: #BABABA;
+    margin: 50px 0 30px 0;
+    font-family: "DeathStar", "Arial", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.hidden {
+    display: none;
+}
+
+#head_nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-family: "Calibri", sans-serif;
+    font-size: 22px;
+    box-shadow:inset 0 64px 75px -40px #000;
+    z-index: 1;
+}
+
+#head_nav ul {
+    display: flex;
+    margin: 0;
+    padding: 2% 0 5% 0;
+    list-style: none;
+}
+
+#head_nav li {
+    margin-left: 5px;
+    padding-right: 5px;
+    line-height: 20px;
+    border-right: 2px solid #fff;
+    font-family: "DeathStar", "Arial", sans-serif;
+    font-weight: lighter;
+}
+
+#head_nav li:last-child {
+    border: none;
+}
+
+.nav_point {
+    display: flex;
+}
+
+.nav_point:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#home {
+    background: url("../images/index/index_bg.jpg") no-repeat scroll;
+    background-size: cover;
+    width: 100%;
+}
+
+.inner_home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30% 0 35% 0;
+    color: #fff;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.game_name {
+    color: #fff;
+    font-family: "DeathStar", "Arial", sans-serif;
+    font-size: 100px;
+    font-weight: lighter;
+    -webkit-user-select: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.start_btn {
+    display: flex;
+    color: #0877F7;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 80px;
+    font-family: "DeathStar", "Arial", sans-serif;
+    -webkit-user-select: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.start_btn:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#about {
+    display: flex;
+    background: #fff;
+    min-height: 400px;
+    width: 100%;
+}
+
+#about p {
+    color: #454545;
+    padding-top: 2%;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 20px;
+    text-transform: none;
+    text-align: center;
+}
+
+.entity_wrap {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5% 0 5% 0;
+}
+
+.about_entity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "moonhouse", "Calibri", sans-serif;
+    font-weight: bold;
+}
+
+.player_ship_icon {
+    width: 99px;
+    height: 75px;
+    background: url("../images/sprite.png") 0 0;
+}
+
+.enemy_ship_icon {
+    width: 98px;
+    height: 50px;
+    background: url("../images/sprite.png") -201px -100px;
+}
+
+.ufo_icon{
+    width: 92px;
+    height: 92px;
+    background: url("../images/sprite.png") -202px 0;
+}
+
+.big_meteor_icon {
+    width: 136px;
+    height: 111px;
+    background: url("../images/sprite.png") 0 -80px;
+}
+
+.small_meteor_icon {
+    width: 44px;
+    height: 42px;
+    background: url("../images/sprite.png") -202px -154px;
+}
+
+#screenshots {
+    display: flex;
+    align-items: center;
+    background: #DCE7EF;
+}
+
+.screenshots-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 400px;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.screenshots-wrap h3 {
+    padding: 30px 0 50px 0;
+}
+
+.img_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img_wrap figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.img_wrap img {
+    width: 100%;
+}
+
+.img_wrap img:hover {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    cursor: pointer;
+}
+
+#control {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    min-height: 400px;
+    width: 100%;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.control_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: lighter;
+    width: 50%;
+}
+
+#control p {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.control_btn_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.control_btn_wrap span {
+    margin-left: 5%;
+}
+
+.control_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#rules {
+    display: flex;
+    background: #DCE7EF;
+    width: 100%;
+}
+
+.rules_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #454545;
+    min-height: 350px;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.contact_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: none;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 50px 0;
+    width: 30%;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #BABABA;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    background: #000;
+    cursor: pointer;
+}
+
+footer {
+    color: #454545;
+    background: #DCE7EF;
+    padding: 20px 0 20px 0;
+    font-family: "moonhouse", "Calibri", sans-serif;
+}
+
+.footer_wrap p {
+    margin-right: 10px;
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.game_over_bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 7;
+    background: black;
+    opacity: 0.7;
+    -webkit-user-select: none;
+}
+
+.game_over h1 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: "moonhouse", "Calibri", sans-serif;
+    font-weight: lighter;
+    -webkit-user-select: none;
+}
+
+.final_score {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family: "moonhouse", "Calibri", sans-serif;
+    font-weight: lighter;
+    -webkit-user-select: none;
+}

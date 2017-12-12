@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space-game</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/game.css">
+  <link rel="stylesheet" href="../fonts/awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<main>
+
+  <section id="index">
+
+    <nav id="head_nav">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#home">
+              <span class="nav_point">home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <span class="nav_point">about</span>
+            </a>
+          </li>
+          <li>
+            <a href="#screenshots">
+              <span class="nav_point">screenshots</span>
+            </a>
+          </li>
+          <li>
+            <a href="#control">
+              <span class="nav_point">control</span>
+            </a>
+          </li>
+          <li>
+            <a href="#rules">
+              <span class="nav_point">rules</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <span class="nav_point">contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container">
+        <div class="inner_home">
+          <h1 class="game_name">space speed</h1>
+          <a href="#" class="start_btn">PLAY</a>
+          <span>Press <b>f11</b> to go full screen</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h1>ABOUT</h1>
+        <p>
+          <strong>SPACE SPEED</strong> is a dangerous journey through the changing, colorful and full of surprises of the
+          universe. You will have to hone your skills, accumulate experience and learn to improvise in order to survive. You
+          will meet interesting characters. Know that despite flying skills, you will still perish. But do not worry!
+          Death here is just the beginning of a big new adventure!
+        </p>
+        <div class="entity_wrap">
+          <figure class="about_entity">
+            <div class="player_ship_icon"></div>
+            <figcaption>Player ship</figcaption>
+          </figure>
+          <figure class="about_entity">
+            <div class="enemy_ship_icon"></div>
+            <figcaption>Enemy ship</figcaption>
+          </figure>
+          <figure class="about_entity">
+            <div class="ufo_icon"></div>
+            <figcaption>UFO</figcaption>
+          </figure>
+          <figure class="about_entity">
+            <div class="big_meteor_icon"></div>
+            <figcaption>Big meteor</figcaption>
+          </figure>
+          <figure class="about_entity">
+            <div class="small_meteor_icon"></div>
+            <figcaption>Small meteor</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots">
+      <div class="container">
+        <div class="screenshots-wrap">
+          <h1>SCREENSHOTS</h1>
+          <div class="img_wrap">
+            <figure>
+              <img src="../images/screenshots/screenshot_1.png">
+              <figcaption>Initial state</figcaption>
+            </figure>
+            <figure>
+              <img src="../images/screenshots/screenshot_2.png">
+              <figcaption>Game flow</figcaption>
+            </figure>
+            <figure>
+              <img src="../images/screenshots/screenshot_3.png">
+              <figcaption>Game over</figcaption>
+            </figure>
+          </div>
+          <h3>Recommended screen size from 768px to 1620px</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="control">
+      <div class="container">
+        <h1>CONTROL</h1>
+        <div class="control_wrap">
+          <p>You control only the player spaceship!</p>
+          <div class="control_buttons">
+            <div class="control_btn_wrap">
+              <i class="fa fa-chevron-circle-up fa-3x" aria-hidden="true"></i>
+              <span>Press the <b>UP</b> button to move the spaceship to up</span>
+            </div>
+            <div class="control_btn_wrap">
+              <i class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i>
+              <span>Press the <b>DOWN</b> button to move the spaceship to down</span>
+            </div>
+            <div class="control_btn_wrap">
+              <i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i>
+              <span>Press the <b>LEFT</b> button to move the spaceship to left</span>
+            </div>
+            <div class="control_btn_wrap">
+              <i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i>
+              <span>Press the <b>RIGHT</b> button to move the spaceship to right</span>
+            </div>
+            <div class="control_btn_wrap">
+              <i class="fa fa-window-minimize fa-3x" aria-hidden="true"></i>
+              <span>Press the <b>SPACE</b> button to fire</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules">
+      <div class="container">
+        <h1>RULES</h1>
+        <div class="rules_wrap">
+          <ul>
+            <li>Your task is to score as many points as possible.</li>
+            <li>The speed of the game is gradually increasing.</li>
+            <li>You can move the ship around the entire playing field.</li>
+            <li>You have <b>5</b> lives.</li>
+            <li>If you encounter an enemy, an UFO or a meteorite, you lose one life.</li>
+            <li>If an enemy bullet hits you, you also lose one life.</li>
+            <li>
+              <span>For every hit you get points:</span>
+              <ul>
+                <li>For a big meteorite <b>200</b> points.</li>
+                <li>For a small meteorite <b>300</b> points.</li>
+                <li>FOR THE UFO <b>500</b> points.</li>
+                <li>For the enemy <b>1000</b> points.</li>
+              </ul>
+            </li>
+            <li>Each shot will cost you <b>100</b> points.</li>
+          </ul>
+          <p>Good luck, warrior!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact_wrap">
+          <h1>CONTACT</h1>
+          <p>You can write to me if you have some recommendations or you noticed problems with game.</p>
+          <div class="social">
+            <a href="https://github.com/karpovich-philip" target="_blank">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/philip.karpovich" target="_blank">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://vk.com/karpovich_philip" target="_blank">
+              <i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer_wrap">
+          <p>Designed by Philip Karpovich with love for you</p>
+          <i class="fa fa-rocket" aria-hidden="true"></i>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+  <section id="game"></section>
+
+  <section id="game_over" class="hidden game_over">
+    <div class="game_over_bg"></div>
+    <h1>game over</h1>
+    <h2 class="final_score"></h2>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
