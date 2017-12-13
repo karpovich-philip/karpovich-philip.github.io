@@ -4,8 +4,8 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -57,7 +57,7 @@ main {
     left: 0;
     font-family: "Calibri", sans-serif;
     font-size: 22px;
-    box-shadow:inset 0 64px 75px -40px #000;
+    box-shadow: inset 0 64px 75px -40px #000;
     z-index: 1;
 }
 
@@ -92,7 +92,7 @@ main {
 }
 
 #home {
-    background: url("../images/index/index_bg.jpg") no-repeat scroll;
+    background: #4e5754 url("../images/index/index_bg.jpg") no-repeat scroll;
     background-size: cover;
     width: 100%;
 }
@@ -178,7 +178,7 @@ main {
     background: url("../images/sprite.png") -201px -100px;
 }
 
-.ufo_icon{
+.ufo_icon {
     width: 92px;
     height: 92px;
     background: url("../images/sprite.png") -202px 0;
